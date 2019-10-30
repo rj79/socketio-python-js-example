@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Example</title>
+        <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='app.css')}}">
+    </head>
+    <body>
+        <canvas id="canvas" width="{{world_size}}" height="{{world_size}}">
+        </canvas>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.4/socket.io.min.js"></script>
+        <script src="{{url_for('static', filename='app.js')}}"></script>
+    </body>
+</html>
